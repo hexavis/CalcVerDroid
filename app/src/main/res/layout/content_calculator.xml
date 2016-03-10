@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/CalcText"
-        android:id="@+id/CalcField"
+        android:id="@+id/mainLabel"
         android:background="#b9b9b9"
         android:height="@dimen/calcHeight"
         android:width="@dimen/calcWidth"
@@ -27,7 +27,8 @@
         android:textColor="#000000"
         android:gravity="center"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="sevenClick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,12 +44,13 @@
         android:textColor="#ffffff"
         android:textAlignment="center"
         android:gravity="center_vertical|center"
-        android:layout_below="@+id/CalcField"
-        android:layout_alignLeft="@+id/CalcField"
-        android:layout_alignStart="@+id/CalcField"
+        android:layout_below="@+id/mainLabel"
+        android:layout_alignLeft="@+id/mainLabel"
+        android:layout_alignStart="@+id/mainLabel"
         android:textSize="@dimen/buttonTSize"
         android:padding="10dp"
-        android:layout_alignParentLeft="false" />
+        android:layout_alignParentLeft="false"
+        android:onClick="clearClick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -105,8 +107,8 @@
         android:gravity="center_vertical|center"
         android:textSize="@dimen/buttonTSize"
         android:layout_alignTop="@+id/emptyButt"
-        android:layout_alignRight="@+id/CalcField"
-        android:layout_alignEnd="@+id/CalcField"
+        android:layout_alignRight="@+id/mainLabel"
+        android:layout_alignEnd="@+id/mainLabel"
         android:padding="10dp"
         android:layout_alignParentLeft="false"
         android:layout_marginLeft="10dp" />
@@ -185,8 +187,8 @@
         android:textSize="@dimen/buttonTSize"
         android:padding="10dp"
         android:layout_alignTop="@+id/nineButt"
-        android:layout_alignRight="@+id/CalcField"
-        android:layout_alignEnd="@+id/CalcField"
+        android:layout_alignRight="@+id/mainLabel"
+        android:layout_alignEnd="@+id/mainLabel"
         android:layout_marginLeft="10dp" />
 
     <TextView
@@ -339,8 +341,8 @@
         android:textSize="@dimen/buttonTSize"
         android:padding="10dp"
         android:layout_alignTop="@+id/twoButt"
-        android:layout_alignRight="@+id/CalcField"
-        android:layout_alignEnd="@+id/CalcField" />
+        android:layout_alignRight="@+id/mainLabel"
+        android:layout_alignEnd="@+id/mainLabel" />
 
     <TextView
         android:layout_width="wrap_content"
